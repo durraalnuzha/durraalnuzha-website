@@ -68,17 +68,17 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 {/* Real Estate */}
                 <Link href="/real-estate-services">
-                  <GlassPanel className="p-8 h-full hover:shadow-glass-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                  <GlassPanel className="p-4 sm:p-6 lg:p-8 h-full hover:shadow-glass-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer">
                     <div className="flex flex-col h-full">
                       <div className="p-3 bg-primary/10 rounded-lg w-fit mb-6">
-                        <Building2 className="h-8 w-8 text-primary" />
+                        <Building2 className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-primary" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-xl font-semibold mb-3">الأنشطة العقارية</h3>
-                        <p className="text-muted-foreground mb-4">
+                        <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2">الأنشطة العقارية</h3>
+                        <p className="text-sm sm:text-base text-muted-foreground mb-3 leading-relaxed line-clamp-2">
                           خدمات شاملة في القطاع العقاري
                         </p>
                         <div className="flex items-center text-primary font-medium">
@@ -92,7 +92,7 @@ export default function Home() {
 
                 {/* Commercial & Tech */}
                 <Link href="/commercial-services">
-                  <GlassPanel className="p-8 h-full hover:shadow-glass-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                  <GlassPanel className="p-8 h-full transition-all duration-300 md:hover:shadow-glass-lg md:hover:scale-[1.02] cursor-pointer">
                     <div className="flex flex-col h-full">
                       <div className="p-3 bg-primary/10 rounded-lg w-fit mb-6">
                         <Zap className="h-8 w-8 text-primary" />
@@ -148,42 +148,66 @@ export default function Home() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <Link href="/real-estate-services">
-                  <GlassPanel className="p-8 hover:shadow-glass-lg transition-all duration-300 cursor-pointer">
-                    <div className="flex items-center space-x-4 space-x-reverse">
-                      <Building2 className="h-8 w-8 text-primary flex-shrink-0" />
-                      <div>
-                        <h3 className="text-xl font-semibold mb-1">أنشطة العقارية</h3>
-                        <p className="text-muted-foreground text-sm">
-                          المساهمات، الوساطة العقارية، إدارة الأملاك، المزادات، إدارة المرافق، التسويق والإعلان، التحليل
-                        </p>
+                  <GlassPanel className="p-4 sm:p-6 lg:p-8 h-full transition-all duration-300 md:hover:shadow-glass-lg md:hover:scale-[1.02] cursor-pointer">
+                    <div className="flex flex-col h-full">
+                      <div className="p-2 sm:p-3 bg-primary/10 rounded-lg w-fit mb-4">
+                        <Building2 className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-primary" />
                       </div>
-                    </div>
-                  </GlassPanel>
-                </Link>
-
-                <Link href="/commercial-services">
-                  <GlassPanel className="p-8 hover:shadow-glass-lg transition-all duration-300 cursor-pointer">
-                    <div className="flex items-center space-x-4 space-x-reverse">
-                      <Zap className="h-8 w-8 text-primary flex-shrink-0" />
-                      <div>
-                        <h3 className="text-xl font-semibold mb-1">الخدمات التجارية والتقنية</h3>
-                        <p className="text-muted-foreground text-sm">
-                          التجارة بالجملة للحوم، UI/UX، الذكاء الاصطناعي، التسويق
+                      <div className="flex-1">
+                        <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2">
+                          الأنشطة العقارية
+                        </h3>
+                        <p className="text-sm sm:text-base text-muted-foreground mb-3 leading-relaxed line-clamp-2">
+                          خدمات شاملة في القطاع العقاري
                         </p>
+                        <div className="flex items-center text-primary font-medium text-sm sm:text-base">
+                          <span>استكشف الخدمات</span>
+                          <ArrowRight className="mr-2 h-4 w-4" />
+                        </div>
+                       </div>
+                      </div>
+                     </GlassPanel>
+                   </Link>
+                
+                <Link href="/commercial-services">
+                  <GlassPanel className="p-4 sm:p-6 lg:p-8 h-full transition-all duration-300 md:hover:shadow-glass-lg md:hover:scale-[1.02] cursor-pointer">
+                    <div className="flex flex-col h-full">
+                      <div className="p-2 sm:p-3 bg-primary/10 rounded-lg w-fit mb-4">
+                        <Zap className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2">
+                          الخدمات التجارية والتقنية 
+                        </h3>
+                        <p className="text-sm sm:text-base text-muted-foreground mb-3 leading-relaxed line-clamp-2">
+                          التجارة بالجملة، UI/UX، الذكاء الاصطناعي، التسويق
+                        </p>
+                        <div className="flex items-center text-primary font-medium text-sm sm:text-base">
+                          <span>استكشف الخدمات</span>
+                          <ArrowRight className="mr-2 h-4 w-4" />
+                        </div>
                       </div>
                     </div>
                   </GlassPanel>
                 </Link>
 
                 <Link href="/media-software">
-                  <GlassPanel className="p-8 hover:shadow-glass-lg transition-all duration-300 cursor-pointer">
-                    <div className="flex items-center space-x-4 space-x-reverse">
-                      <FileText className="h-8 w-8 text-primary flex-shrink-0" />
-                      <div>
-                        <h3 className="text-xl font-semibold mb-1">الإعلام والبرمجيات</h3>
-                        <p className="text-muted-foreground text-sm">
-                          التصوير الفوتوغرافي والتجاري، برمجة البرمجيات الخاصة
+                  <GlassPanel className="p-4 sm:p-6 lg:p-8 h-full transition-all duration-300 md:hover:shadow-glass-lg md:hover:scale-[1.02] cursor-pointer">
+                    <div className="flex flex-col h-full">
+                      <div className="p-2 sm:p-3 bg-primary/10 rounded-lg w-fit mb-4">
+                        <FileText className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2">
+                          الإعلام والبرمجيات
+                        </h3>
+                        <p className="text-sm sm:text-base text-muted-foreground mb-3 leading-relaxed line-clamp-2">
+                           التصوير الفوتوغرافي والتجاري، برمجة البرمجيات الخاصة
                         </p>
+                        <div className="flex items-center text-primary font-medium text-sm sm:text-base">
+                          <span>استكشف الخدمات</span>
+                          <ArrowRight className="mr-2 h-4 w-4" />
+                        </div>
                       </div>
                     </div>
                   </GlassPanel>
