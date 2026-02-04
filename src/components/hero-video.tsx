@@ -35,6 +35,8 @@ export function HeroVideo({ videoUrl, className, children }: HeroVideoProps) {
         muted
         loop
         playsInline
+        preload="metadata"     
+        poster="/hero-poster.jpg"
         className={cn(
           "absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-out",
           isRevealed
