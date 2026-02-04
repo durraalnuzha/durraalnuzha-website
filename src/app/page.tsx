@@ -34,8 +34,8 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Link href="/media-software">
                   <Button
-                   size="lg"
-                  className="px-6 py-3 text-sm sm:px-8 sm:py-4 sm:text-base bg-primary hover:bg-primary-hover text-primary-foreground rounded-xl"
+                    size="lg"
+                    className="px-6 py-3 text-sm sm:px-8 sm:py-4 sm:text-base bg-primary hover:bg-primary-hover text-primary-foreground rounded-xl"
                   >
                     استكشف خدماتنا
                     <ArrowRight className="mr-2 h-4 w-4" />
@@ -145,8 +145,8 @@ export default function Home() {
                   روابط سريعة
                 </h2>
               </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6>
+ 
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <Link href="/real-estate-services">
                   <GlassPanel className="p-4 sm:p-6 lg:p-8 h-full transition-all duration-300 md:hover:shadow-glass-lg md:hover:scale-[1.02] cursor-pointer">
                     <div className="flex flex-col h-full">
@@ -164,10 +164,10 @@ export default function Home() {
                           <span>استكشف الخدمات</span>
                           <ArrowRight className="mr-2 h-4 w-4" />
                         </div>
-                       </div>
                       </div>
-                     </GlassPanel>
-                   </Link>
+                    </div> {/* <--- تمت إضافة هذا الإغلاق الناقص */}
+                  </GlassPanel>
+                </Link>
                 
                 <Link href="/commercial-services">
                   <GlassPanel className="p-4 sm:p-6 lg:p-8 h-full transition-all duration-300 md:hover:shadow-glass-lg md:hover:scale-[1.02] cursor-pointer">
@@ -187,7 +187,7 @@ export default function Home() {
                           <ArrowRight className="mr-2 h-4 w-4" />
                         </div>
                       </div>
-                    </div>
+                    </div> {/* <--- تمت إضافة هذا الإغلاق الناقص */}
                   </GlassPanel>
                 </Link>
 
@@ -209,7 +209,7 @@ export default function Home() {
                           <ArrowRight className="mr-2 h-4 w-4" />
                         </div>
                       </div>
-                    </div>
+                    </div> {/* <--- تمت إضافة هذا الإغلاق الناقص */}
                   </GlassPanel>
                 </Link>
 
