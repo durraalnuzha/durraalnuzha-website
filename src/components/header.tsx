@@ -167,27 +167,28 @@ export function Header() {
           </div>
 
           {/* Menu Items */}
-          <nav className="space-y-4">
+          <nav className="space-y-2 sm:space-y-4">
             {navLinks.map((link, index) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={cn(
-                  "block text-center py-4 px-6 rounded-xl",
-                  "text-xl md:text-2xl font-medium",
-                  "transition-all duration-300 ease-out",
-                  "hover:scale-105 hover:shadow-glass-lg",
-                  "bg-white/40 backdrop-blur-xl border border-white/20",
-                  pathname === link.href
-                    ? "text-primary bg-primary/10 border-primary/30 scale-105"
-                    : "text-foreground hover:text-primary hover:bg-white/60"
-                )}
-                style={{
-                  transitionDelay: mobileMenuOpen ? `${index * 50}ms` : '0ms',
-                }}
-              >
-                {link.name}
+                 "block text-center",
+                 "py-3 sm:py-4 px-4 sm:px-6 rounded-lg",
+                 "text-base sm:text-lg md:text-2xl font-medium",
+                 "transition-all duration-300 ease-out",
+                 "bg-transparent border-b border-white/20",
+                "md:hover:scale-105 md:hover:shadow-glass-lg",
+                pathname === link.href
+                  ? "text-primary bg-primary/10"
+                  : "text-foreground hover:text-primary"
+               )}
+              style={{
+                transitionDelay: mobileMenuOpen ? `${index * 40}ms` : "0ms",
+               }}
+             >
+               {link.name}
               </Link>
             ))}
           </nav>
