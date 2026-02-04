@@ -19,23 +19,23 @@ export default function Home() {
         {/* Hero Section with Cinematic Video */}
         <HeroVideo videoUrl={heroVideoUrl}>
           <div className="container mx-auto px-4 text-center">
-            <div className="max-w-4xl mx-auto space-y-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
+            <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 مؤسسة درة النزهة للتجارة
               </h1>
-              <p className="text-xl md:text-2xl text-foreground/80 mb-6 font-light">
+              <p className="text-sm sm:text-base md:text-xl text-foreground/70 font-light">
                 Durra Al Nuzha Trading Establishment
               </p>
 
-              <p className="text-lg md:text-xl text-foreground/70 mb-8 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-foreground/70 max-w-xl mx-auto leading-relaxed">
                 مؤسسة سعودية نظامية متعددة المجالات مع تركيز واضح على الأنشطة العقارية
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Link href="/media-software">
                   <Button
-                    size="lg"
-                    className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 text-base"
+                   size="lg"
+                  className="px-6 py-3 text-sm sm:px-8 sm:py-4 sm:text-base bg-primary hover:bg-primary-hover text-primary-foreground rounded-xl"
                   >
                     استكشف خدماتنا
                     <ArrowRight className="mr-2 h-4 w-4" />
@@ -45,7 +45,7 @@ export default function Home() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-border hover:bg-primary/10 px-8 text-base"
+                    className="px-6 py-3 text-sm sm:px-8 sm:py-4 sm:text-base border-border hover:bg-primary/10 rounded-xl"
                   >
                     تواصل معنا
                   </Button>
