@@ -16,14 +16,19 @@ export function HeroVideo({ videoUrl, className, children }: HeroVideoProps) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsRevealed(true);
-    }, 2500); // 2.5 seconds before UI reveals
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className={cn("relative w-full h-screen overflow-hidden", className)}>
-      {/* Video Background Layer */}
+    <div
+      className={cn(
+        "relative w-full h-[70vh] md:h-screen overflow-hidden",
+        className
+      )}
+    >
+      {/* Video Background */}
       <video
         ref={videoRef}
         autoPlay
@@ -32,24 +37,26 @@ export function HeroVideo({ videoUrl, className, children }: HeroVideoProps) {
         playsInline
         className={cn(
           "absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-out",
-          isRevealed ? "scale-105 opacity-60" : "scale-100 opacity-100"
+          isRevealed
+            ? "scale-105 md:scale-105 opacity-50 md:opacity-60"
+            : "scale-100 opacity-100"
         )}
       >
         <source src={videoUrl} type="video/mp4" />
       </video>
 
-      {/* Clean Overlay - No heavy gradients */}
+      {/* Soft Overlay */}
       <div
         className={cn(
-          "absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white/90 transition-all duration-1000 ease-out",
+          "absolute inset-0 bg-gradient-to-b from-transparent via-white/10 md:via-white/20 to-white/80 md:to-white/90 transition-all duration-1000 ease-out",
           isRevealed ? "opacity-100" : "opacity-0"
         )}
       />
 
-      {/* UI Layer - Foreground */}
+      {/* Foreground UI */}
       <div
         className={cn(
-          "relative z-10 flex items-center justify-center h-full w-full transition-all duration-700 ease-out",
+          "relative z-10 flex items-end md:items-center justify-center h-full w-full pb-16 md:pb-0 transition-all duration-700 ease-out",
           isRevealed ? "opacity-100" : "opacity-0"
         )}
       >
