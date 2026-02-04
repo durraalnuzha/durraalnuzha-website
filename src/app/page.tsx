@@ -95,7 +95,7 @@ export default function Home() {
                   <GlassPanel className="p-8 h-full transition-all duration-300 md:hover:shadow-glass-lg md:hover:scale-[1.02] cursor-pointer">
                     <div className="flex flex-col h-full">
                       <div className="p-3 bg-primary/10 rounded-lg w-fit mb-6">
-                        <Zap className="h-8 w-8 text-primary" />
+                        <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0" />
                       </div>
                       <div className="flex-1">
                         <h3 className="text-xl font-semibold mb-3">الخدمات التجارية والتقنية</h3>
@@ -116,7 +116,7 @@ export default function Home() {
                   <GlassPanel className="p-8 h-full hover:shadow-glass-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer">
                     <div className="flex flex-col h-full">
                       <div className="p-3 bg-primary/10 rounded-lg w-fit mb-6">
-                        <FileText className="h-8 w-8 text-primary" />
+                        <FileText className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0" />
                       </div>
                       <div className="text-center flex-1">
                         <h3 className="text-xl font-semibold mb-3">الإعلام والبرمجيات</h3>
@@ -146,7 +146,7 @@ export default function Home() {
                 </h2>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6>
                 <Link href="/real-estate-services">
                   <GlassPanel className="p-4 sm:p-6 lg:p-8 h-full transition-all duration-300 md:hover:shadow-glass-lg md:hover:scale-[1.02] cursor-pointer">
                     <div className="flex flex-col h-full">
@@ -214,12 +214,12 @@ export default function Home() {
                 </Link>
 
                 <Link href="/about">
-                  <GlassPanel className="p-8 hover:shadow-glass-lg transition-all duration-300 cursor-pointer">
+                  <GlassPanel className="p-4 sm:p-6 transition-all duration-300 md:hover:shadow-glass-lg cursor-pointer">
                     <div className="flex items-center space-x-4 space-x-reverse">
-                      <Users className="h-8 w-8 text-primary flex-shrink-0" />
+                      <Users className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0" />
                       <div>
-                        <h3 className="text-xl font-semibold mb-1">من نحن</h3>
-                        <p className="text-muted-foreground text-sm">
+                        <h3 className="text-base sm:text-lg font-semibold mb-1">من نحن</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
                           تعرف علينا وعلى التزامنا بالتميز
                         </p>
                       </div>
@@ -228,12 +228,12 @@ export default function Home() {
                 </Link>
 
                 <Link href="/regulatory">
-                  <GlassPanel className="p-8 hover:shadow-glass-lg transition-all duration-300 cursor-pointer">
+                  <GlassPanel className="p-4 sm:p-6 transition-all duration-300 md:hover:shadow-glass-lg cursor-pointer">
                     <div className="flex items-center space-x-4 space-x-reverse">
-                      <Info className="h-8 w-8 text-primary flex-shrink-0" />
+                      <Info className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0" />
                       <div>
-                        <h3 className="text-xl font-semibold mb-1">البيانات النظامية</h3>
-                        <p className="text-muted-foreground text-sm">
+                        <h3 className="text-base sm:text-lg font-semibold mb-1">البيانات النظامية</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
                           السجل التجاري، الرقم الضريبي، التراخيص
                         </p>
                       </div>
@@ -242,12 +242,12 @@ export default function Home() {
                 </Link>
 
                 <Link href="/contact">
-                  <GlassPanel className="p-8 hover:shadow-glass-lg transition-all duration-300 cursor-pointer">
+                  <GlassPanel className="p-4 sm:p-6 transition-all duration-300 md:hover:shadow-glass-lg cursor-pointer">
                     <div className="flex items-center space-x-4 space-x-reverse">
-                      <Phone className="h-8 w-8 text-primary flex-shrink-0" />
+                      <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0" />
                       <div>
-                        <h3 className="text-xl font-semibold mb-1">تواصل معنا</h3>
-                        <p className="text-muted-foreground text-sm">
+                        <h3 className="text-base sm:text-lg font-semibold mb-1">تواصل معنا</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
                           هاتف جديد، واتساب، البريد، العنوان
                         </p>
                       </div>
