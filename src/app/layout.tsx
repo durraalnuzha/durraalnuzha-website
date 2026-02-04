@@ -1,3 +1,17 @@
+export const metadata = {
+  title: "مؤسسة درة النزهة للتجارة | Durra Al Nuzha",
+  description:
+    "مؤسسة سعودية نظامية متعددة المجالات، متخصصة في الأنشطة العقارية، والخدمات التجارية والتقنية، والإعلام والبرمجيات.",
+  keywords: [
+    "درة النزهة",
+    "عقار",
+    "أنشطة عقارية",
+    "خدمات تجارية",
+    "برمجة",
+    "تصوير",
+    "مؤسسة سعودية",
+  ],
+};
 import type { Metadata, Viewport } from "next";
 import { Tajawal } from "next/font/google";
 import "./globals.css";
